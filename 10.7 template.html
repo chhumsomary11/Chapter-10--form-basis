@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Title Goes Here</title>
+    <meta charset="utf-8" />
+    <style>
+      label {
+        display: block;
+        margin-top: 20px;
+      }
+      input {
+        display: block;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+      <h1>Comment Form</h1>
+      <p>Required fields are marked with an asterisk*</p>
+      <label for="firstName">*First Name</label>
+      <input type="text" required placeholder="your first name" />
+      <label for="lastName">*Last Name</label>
+      <input type="text" required placeholder="your last name" />
+      <label for="email">* E-mail</label>
+      <input type="text" required placeholder="you@yourdomain.com" />
+      <label for="rating">Rating(1-10)</label>
+      <input type="range" min="1" max="10" />
+      <label for="cmt">*Comments</label>
+      <textarea
+        name="cmt"
+        id="cmt"
+        placeholder="your comment here"
+        required
+        rows="2"
+        cols="40"
+      >
+      </textarea>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
